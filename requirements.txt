@@ -1,0 +1,5 @@
+pandas 
+numpy
+seaborn
+-e .
+# -e . is map with setup.py bascically it give indication setup.py if present
