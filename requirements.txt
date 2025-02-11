@@ -3,6 +3,7 @@ numpy
 seaborn
 catboost
 xgboost
+dill
 
 # -e .
 # -e . is map with setup.py bascically it give indication setup.py if present
