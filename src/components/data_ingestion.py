@@ -1,5 +1,8 @@
-import os
 import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
+
 import pandas as pd
 from dataclasses import dataclass
 from sklearn.model_selection import train_test_split
@@ -7,6 +10,7 @@ from sklearn.model_selection import train_test_split
 from src.exception import CustomException
 from src.logger import logging
 from src.components.data_transformnation import DataTransformation
+from src.components.model_traniner import ModelTrainer
 
 # Ensure logs directory exists
 os.makedirs("logs", exist_ok=True)
@@ -25,7 +29,6 @@ class DataIngestion:
         logging.info("Enter the data ingestion method or component")
 
         try:
-            # Ensure file exists
             dataset_path = "notebook/data/stud.csv"
             if not os.path.exists(dataset_path):
                 raise FileNotFoundError(f"Dataset not found at {dataset_path}")
@@ -58,8 +61,24 @@ class DataIngestion:
             raise CustomException(e, sys)
 
 if __name__ == "__main__":
-    obj = DataIngestion()
-    train_data, test_data = obj.initiate_data_ingestion()
+    try:
+        obj = DataIngestion()
+        train_data, test_data = obj.initiate_data_ingestion()
 
-    data_transformation = DataTransformation()
-    data_transformation.initiate_data_transformation(train_data, test_data)
+        data_transformation = DataTransformation()
+        train_arr, test_arr, preprocessor_path = data_transformation.initiate_data_transformation(train_data, test_data)
+
+        # ✅ Ensure Pickle File is Created
+        if not os.path.exists(preprocessor_path):
+            raise FileNotFoundError(f"❌ Pickle file was not created at {preprocessor_path}")
+
+        print(f"✅ Pickle File Created: {preprocessor_path}")
+
+        # ✅ Train the Model and Compute R² Score
+        model_trainer = ModelTrainer()  # Ensure ModelTrainer is correctly initialized
+        r2_score_value = model_trainer.initiate_model_trainer(train_arr, test_arr, preprocessor_path)
+
+        print(f"🎯 Final R² Score: {r2_score_value:.4f}")
+
+    except Exception as e:
+        print(f"❌ Error: {e}")
