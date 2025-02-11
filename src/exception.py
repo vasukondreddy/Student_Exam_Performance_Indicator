@@ -1,7 +1,6 @@
 import sys
 import logging
-from logger import LOG_FILE_PATH
-
+from src.logger import LOG_FILE_PATH
 def error_message_detail(error, error_detail: sys):
     _, _, exc_tb = error_detail.exc_info()  # it gives where the error happened with line number
     file_name = exc_tb.tb_frame.f_code.co_filename
