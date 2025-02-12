@@ -7,5 +7,6 @@ dill
 Flask
 joblib
 gunicorn
-# -e .
+scikit-learn
+-e .
 # -e . is map with setup.py bascically it give indication setup.py if present
