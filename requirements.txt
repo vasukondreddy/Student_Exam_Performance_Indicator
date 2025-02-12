@@ -5,6 +5,6 @@ catboost
 xgboost
 dill
 Flask
-
+joblib
 # -e .
 # -e . is map with setup.py bascically it give indication setup.py if present
