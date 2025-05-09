@@ -1,4 +1,4 @@
-# Student Exam Performance Indicator 
+### Student Exam Performance Indicator 
 
 This repository contains an end-to-end machine learning project that predicts student performance based on various features. The project is built using essential machine learning concepts and tools, and follows a complete ML pipeline from data ingestion to model deployment.
 
@@ -6,7 +6,7 @@ This repository contains an end-to-end machine learning project that predicts st
 
 The objective of this project is to analyze student-related data and predict exam performance. This can help in identifying students at risk and understanding key factors that influence academic success.
 
-### Dataset
+## Dataset
 The dataset includes the following features:
 - Gender
 - Race/Ethnicity
