@@ -16,7 +16,7 @@ The dataset includes the following features:
 - Scores in math, reading, and writing
 
 
-## -> 🛠Technologies Used
+## -> Technologies Used
 
 - **Python**
 - **Pandas, NumPy** – Data preprocessing and analysis
