@@ -1,8 +1,8 @@
-# 🧠 Student Exam Performance Indicator 🎓
+# Student Exam Performance Indicator 
 
 This repository contains an end-to-end machine learning project that predicts student performance based on various features. The project is built using essential machine learning concepts and tools, and follows a complete ML pipeline from data ingestion to model deployment.
 
-## 📊 Project Overview
+##  Project Overview
 
 The objective of this project is to analyze student-related data and predict exam performance. This can help in identifying students at risk and understanding key factors that influence academic success.
 
@@ -16,7 +16,7 @@ The dataset includes the following features:
 - Scores in math, reading, and writing
 
 
-## 🛠️ Technologies Used
+## -> 🛠Technologies Used
 
 - **Python**
 - **Pandas, NumPy** – Data preprocessing and analysis
@@ -27,7 +27,7 @@ The dataset includes the following features:
 
 
 
-## 🔍 Key Concepts Applied
+## -> Key Concepts Applied
 
 -  Exploratory Data Analysis (EDA)
 -  Feature Engineering & Encoding
@@ -40,7 +40,7 @@ The dataset includes the following features:
 -  Pipeline Creation 
 
 
-## 📈 Results
+## -> Results
 
 -  **Performed exploratory data analysis (EDA)** to visualize trends and correlations in the overall dataset 
 -  **Achieved a model with high accuracy** in predicting student math exam scores  
