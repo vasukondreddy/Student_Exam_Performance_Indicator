@@ -1,4 +1,4 @@
-### Student Exam Performance Indicator 
+# Student Exam Performance Indicator 
 
 This repository contains an end-to-end machine learning project that predicts student performance based on various features. The project is built using essential machine learning concepts and tools, and follows a complete ML pipeline from data ingestion to model deployment.
 
