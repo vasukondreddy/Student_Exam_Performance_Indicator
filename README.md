@@ -6,6 +6,11 @@ This repository contains an end-to-end machine learning project that predicts st
 
 The objective of this project is to analyze student-related data and predict exam performance. This can help in identifying students at risk and understanding key factors that influence academic success.
 
+## Link: 
+
+-> https://ml-project-v3de.onrender.com  ( Home page)
+-> https://ml-project-v3de.onrender.com/predictdata
+
 ## Dataset
 The dataset includes the following features:
 - Gender
